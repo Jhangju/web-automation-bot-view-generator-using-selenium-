@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+  </PropertyGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)selenium.webdriver.chromedriver\87.0.4280.8800\build\Selenium.WebDriver.ChromeDriver.targets" Condition="Exists('$(NuGetPackageRoot)selenium.webdriver.chromedriver\87.0.4280.8800\build\Selenium.WebDriver.ChromeDriver.targets')" />
+    <Import Project="$(NuGetPackageRoot)selenium.firefox.webdriver\0.27.0\build\Selenium.Firefox.WebDriver.targets" Condition="Exists('$(NuGetPackageRoot)selenium.firefox.webdriver\0.27.0\build\Selenium.Firefox.WebDriver.targets')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.extensions.configuration.usersecrets\3.1.0\build\netstandard2.0\Microsoft.Extensions.Configuration.UserSecrets.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.configuration.usersecrets\3.1.0\build\netstandard2.0\Microsoft.Extensions.Configuration.UserSecrets.targets')" />
+  </ImportGroup>
+</Project>
